@@ -1,0 +1,22 @@
+# Dependências do Node — nunca sobem para o git
+node_modules/
+server/node_modules/
+
+# Arquivos de build gerados pelo Vite
+dist/
+
+# Variáveis de ambiente (senhas, chaves de API)
+.env
+.env.local
+.env.production
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cache do Vite
+.vite/

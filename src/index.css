@@ -1,0 +1,16 @@
+/* src/index.css */
+
+/* Zera margens e padding de todos os elementos,
+   e faz o box-sizing incluir border e padding no tamanho total */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Esconde a barra de rolagem (o canvas vai ocupar 100% da tela)
+   e define o fundo branco como base do quadro */
+body {
+  overflow: hidden;
+  background: #fff;
+}
