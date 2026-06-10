@@ -27,11 +27,13 @@ function App() {
       onDataChannel: (channel) => {
         console.log('✅ Canal pronto:', channel.label)
 
-        ydoc.on('update', (update: Uint8Array) => {
+        ydoc.on('update', (update: any) => {
           if (channel.readyState === 'open') {
-            channel.send(update)
-          }
-        })
+             const uint8 = new Uint8Array(update)
+             channel.send(uint8)
+
+             }
+})
       },
 
       onMessage: (data: ArrayBuffer) => {

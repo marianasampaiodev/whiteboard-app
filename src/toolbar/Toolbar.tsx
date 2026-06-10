@@ -1,6 +1,5 @@
 // src/toolbar/Toolbar.tsx
 
-import type { RefObject } from 'react'
 
 // Cores disponíveis na paleta
 // Cada cor tem um valor hex e um label para acessibilidade
